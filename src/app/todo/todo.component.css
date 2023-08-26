@@ -1,13 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-.list-group-item span{
-    cursor: pointer;
-}
-body{
-    background-color: rgb(20, 20, 20);
-}
 .input-wrapper {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   .input-text {
@@ -17,33 +10,26 @@ body{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: box-shadow 0.3s ease;
-    font-weight: normal; /* Set initial font weight */
-  }
-  .input-text.focused {
-    font-size: 20px;
-    font-weight: bold;
   }
   
   .input-text:focus {
     outline: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
+  
   .underline {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #20b55c; /* You can choose your preferred color */
+    background-color: #3498db; /* You can choose your preferred color */
     transform-origin: bottom left;
     transform: scaleX(0); /* Initially hidden */
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease;
   }
   
   .input-wrapper:focus-within .underline {
     transform: scaleX(1); /* Show underline on focus */
   }
-.item-delete:hover{
-    color: red;
-}
   
